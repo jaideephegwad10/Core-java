@@ -1,11 +1,20 @@
 class MobileCase{
 
-	public static void main(String[] spigen){
+	public static void main(String[] moshking){
 	
-		System.out.println("[Compatibility] Spigen Genuine Case Compatible with Galaxy S23");
-		System.out.println("[Licensed Product] Licensed under Samsung Mobile Accessory Partnership Program");
-		System.out.println("[Material] Made of high-quality TPU (Thermoplastic Polyurethane)");
-		System.out.println("[Modern Design] Modern style pattern design for fingerprint resistance and minimal look");
-		System.out.println("[Protection] Edge protection through air cushion technology");
+		System.out.println("main started");
+		String brandName = "Moshking";
+		String compatiblePhoneModels  = "Samsung Galaxy S24 Ultra 5G";
+		String  colour  = "Black";
+		String compatibleDevice = "Samsung Galaxy S24 Ultra 5G";
+		String material = "Thermoplastic Polyurethane";
+		
+		System.out.println("The brand name is "+brandName);
+		System.out.println("Compatible phone model is "+compatiblePhoneModels);
+		System.out.println("Colour of the case is "+colour);
+		System.out.println("Compatible device is "+ compatibleDevice);
+		System.out.println("The material type of the case is "+material);
+		
+		System.out.println("main ended");
 	}
 }

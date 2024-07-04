@@ -1,22 +1,31 @@
 class Printer{
 
-	public static void main(String[] canon){
-	
-		System.out.println("Printer Type - Inkjet; Functionality - All-in-One (Print, Scan, Copy), Scanner type - Flatbed ; Printer Output - Colour");
-		System.out.println("Connectivity - USB ; Compatibility - Windows XP or newer and Mac OS X v10.7.5 or newer");
-		System.out.println("Pages per minute - 8 pages (Black), 4 pages (Colour) ; Cost per page - Rs 5.3 (Black & White), Rs 7.8 (Colour) - As per ISO standards");
-		System.out.println("Ideal usage - Home & Small Office, Low usage ( less than 100 pages per month)");
-		System.out.println("Page size supported - 4.0x6.0 till A4 / Letter / Legal ; Duplex Print - Manual ; Print resolution - 4800x600");
-		System.out.println("Compatible Ink Cartridge - PG-745 (Black), CL-746 (Colour) ; Page Yield - 180 pages ; Includes 1 Black and 1 Colour cartridge in the box");
-		System.out.println("Warranty Details: 1 year manufacturer warranty from the date of purchase");
-		System.out.println("For any product related queries, kindly contact Canon brand customer care on : [1800 180 3366 ][1800 208 3366] Timings: 8:30am-5:30pm");
-		System.out.println("Connectivity: USB");
-		System.out.println("Compatible ink: PG-745 (Black), CL-746 (Color); Page Yield: PG-745 - 180 B&W pages, CL-746 - 180 color pages");
-		System.out.println("Warranty: 1 year from the date of purchase; For installation support and product related queries, kindly contact Canon brand customer care on : [1800 180 3366 ][1800 208 3366] Timings: 8:30am-5:30pm");
-		System.out.println("Supported OS: Windows 8 / Windows 7 / Window Vista / Windows XP,Mac OS X v10.7.5 and later");
-		System.out.println("Use only original Canon ink. Using counterfeit ink will harm your printer as well as render your warranty void");
-		System.out.println("Manufacturer Detail: Canon INC 3-30-2, Shimomaruko, Ohta-ku, Tokyo-146-8501, Japan");
-		System.out.println("Packer Detail: Canon Vietnam Co., Ltd, Lot A1, Thang Long industrial park, Kim Chung commune, Dong Anh district, Ha Noi City, Vietnam");
-		System.out.println("Importer Details: Canon India Pvt Limited.214-218, 2nd floor, Narain Manzil, Barakhamba Road, Connaught Place, New Delhi-110001, India");
-	}
+        static String brandName = "Canon";
+        static String connectivityTechnology = "Wi-Fi, USB";
+        static String printingTechnology = "Inkjet";
+        static String specialFeatures = "Scan To E-Mail, Print through Canon SELPHY App, Mac OS X v10.8.5 (compatible), Windows 10, Windows 8, Windows 7 SP1, Windows Vista SP2 (compatible), Low cost cartridge, Auto Power On, Flatbed Scanner";
+        static String colour = "White/Blue";
+        static String modelName = "Pixma";
+        static String printerOutput = "Colour";
+        static int maxPrintSpeedColour = 4;
+        static int maxPrintSpeedMonochrome = 8;
+        static int itemWeight = 3500;
+		
+    public static void main(String[] canon){
+    
+        System.out.println("main started");
+
+        System.out.println("The brand name of the printer is "+brandName);
+        System.out.println("The connectivity technology is "+connectivityTechnology);
+        System.out.println("The printing technology is "+printingTechnology);
+        System.out.println("The special features are "+specialFeatures);
+        System.out.println("The colour of the printer is "+colour);
+        System.out.println("The model name is "+modelName);
+        System.out.println("The printer output is "+printerOutput);
+        System.out.println("The maximum print speed for colour is "+maxPrintSpeedColour+" ppm");
+        System.out.println("The maximum print speed for monochrome is "+maxPrintSpeedMonochrome+" ppm");
+        System.out.println("The item weight is "+itemWeight+" grams");
+        
+        System.out.println("main ended");
+    }
 }

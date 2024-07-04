@@ -1,10 +1,33 @@
-class DslrCamera {
+class DslrCamera{
 
-    public static void main(String[] nikon) {
-        System.out.println("20.9MP DX-Format CMOS Sensor, SnapBridge Bluetooth and Wi-Fi; 4K UHD Video Recording at 30 fps");
-        System.out.println("Multi-CAM 3500FX II 51-Point AF System");
-        System.out.println("Native ISO 51200, Expanded ISO 1,640,000");
-        System.out.println("180k-Pixel RGB Sensor and Group Area AF; Country of Origin: Japan");
-        System.out.println("Compatible Mountings: Nikon F; Hardware Interface: Audio Video Port");
+    public static void main(String[] sony) {
+    
+        System.out.println("main started");
+		
+        String compatibleMountings = "Sony E";
+        String photoSensorTechnology = "CMOS";
+        String supportedFileFormat = "aps-c";
+        String imageStabilisation = "Optical";
+        int maximumFocalLength = 50; 
+        int opticalZoom = 3; 
+        double maximumAperture = 3.5; 
+        String meteringDescription = "Evaluative";
+        String brand = "Sony";
+        String modelName = "Alpha";
+        
+        System.out.println("The camera's compatible mountings are " + compatibleMountings);
+        System.out.println("The photo sensor technology is " + photoSensorTechnology);
+        System.out.println("The supported file format is " + supportedFileFormat);
+        System.out.println("The image stabilisation is " + imageStabilisation);
+        System.out.println("The maximum focal length is " + maximumFocalLength + " millimeters");
+        System.out.println("The optical zoom is " + opticalZoom + "x");
+        System.out.println("The maximum aperture is " + maximumAperture + " millimeters");
+        System.out.println("The metering description is " + meteringDescription);
+        System.out.println("The brand name is " + brand);
+        System.out.println("The model name is " + modelName);
+        
+        System.out.println("main ended");
     }
+	
+	
 }

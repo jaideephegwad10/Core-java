@@ -1,11 +1,23 @@
 class Monitor{
 
-	public static void main(String[] LG){
+
+		static String brandName = "MSI";
+		static String resolution  = "FHD 1080p";
+		static int  screenSize  = 22;
+		static String aspectRatio  = "16:9";
+		static String screenSurfaceDescription = "Flat";
+		
+	public static void main(String[] electronics){
 	
-		System.out.println("21.45'' Full HD display");
-		System.out.println("100Hz Refresh Rate");
-		System.out.println("3-side Virtually Borderless design");
-		System.out.println("Reader Mode & Flicker Safe");
-		System.out.println("Warranty: 3 Years Parts & Labor");
+		System.out.println("main started");
+		
+		
+		System.out.println("The monitor brand name is "+brandName);
+		System.out.println("It has a resolution of "+resolution);
+		System.out.println("Its screen size is "+screenSize);
+		System.out.println("Its aspect ratio is "+aspectRatio);
+		System.out.println("The screen surface is "+screenSurfaceDescription);
+		
+		System.out.println("main ended");
 	}
 }

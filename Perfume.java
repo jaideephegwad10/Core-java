@@ -1,11 +1,20 @@
 class Perfume{
 
-	public static void main(String[] villain){
+	public static void main(String[] fragrance){
 	
-		System.out.println("Woody : A strong yet earthy note that lasts longer than all the dark clouds in your head");
-		System.out.println("Premium long lasting fragrance crafted with unique exotic ingredients");
-		System.out.println("Spice : Hot, distinct, appealing and lingers enough to catch an undivided attention of your prey");
-		System.out.println("Eau de parfum for men - long lasting; Country of origin - India");
-		System.out.println("Ingredients: Notes Of Mandarin, Bergamot, Amber & White Musk");
+		System.out.println("main started");
+		String brandName = "Park Avenue";
+		String itemForm  = "Liquid";
+		int  itemVolume  = 120;
+		String scent     = "wood";
+		String specialFeature = "Long lasting";
+		
+		System.out.println("The brand name of the perfume is "+brandName);
+		System.out.println("The form of the item is "+itemForm);
+		System.out.println("Volume of the perfume in ml is "+itemVolume);
+		System.out.println("The scent of the perfume is "+ scent);
+		System.out.println("Special feature of this perfume is "+specialFeature);
+		
+		System.out.println("main ended");
 	}
 }

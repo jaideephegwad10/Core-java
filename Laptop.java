@@ -1,11 +1,27 @@
 class Laptop{
 
-	public static void main(String[] dell){
+	public static void main(String[] asus){
 	
-		System.out.println("Processor: 12th Gen Intel Core i5-1235U (up to 4.40 GHz, 12MB Cache, 10 Cores)");
-		System.out.println("RAM: 8 GB: 1 x 8 GB, DDR4, 2666 // Storage: 512GB SSD");
-		System.out.println("Software: Pre-Loaded Windows 11 Home with Lifetime Validity | MS Office Home and Student 2021 with lifetime validity| McAfee Multi Device Security 15-month subscription");
-		System.out.println("Display: 15.6'' FHD WVA AG 120Hz 250 nits Narrow Border // Keyboard: Standard Keyboard");
-		System.out.println("Ports: 2 USB 3.2 Gen 1 port, 1 USB 2.0 port, 1 headset (headphone and microphone combo) port, 1 HDMI 1.4 port, HDMI 1.4 (Maximum resolution supported over HDMI is 1920x1080 @60Hz. No 4K/2K output), 1 RJ45 Ethernet port (flip-down)");
+		System.out.println("main started");
+		String brandName = "ASUS";
+		String modelName = "VivoBook 15 (2021)";
+		String colour  = "Transparent Silver";
+		int  hardDiskSpace  = 512;
+		String cpuModel     = "Celeron N4020";
+		int ramSize = 4;
+		String operatingSystem = "Windows 11 Home";
+		String specialFeature = "Fingerprint Reader, Backlit Keyboard, Anti Glare Coating";
+		String graphicsCard = "Integrated";
+		
+		System.out.println("The laptop brand name is "+brandName);
+		System.out.println("The model name is "+modelName);
+		System.out.println("The colour is "+colour);
+		System.out.println("Size of the hard disk is "+hardDiskSpace);
+		System.out.println("The CPU model name is "+cpuModel);
+		System.out.println("The size of ram is "+ramSize+"GB");
+		System.out.println("The operating system used is "+operatingSystem);
+		System.out.println("The graphics card is "+graphicsCard);
+		
+		System.out.println("main ended");
 	}
 }

@@ -1,11 +1,27 @@
 class HairOil{
 
-	public static void main(String[] parachute){
-	
-		System.out.println("Nothing but 100% pure coconut oil;Made with the finest hand-picked coconuts");
-		System.out.println("Contains no added preservatives or chemicals");
-		System.out.println("Fresh Nutty fragrance of Pure coconut oil; Long lasting freshness");
-		System.out.println("27 quality tests and 5 stage purification process – for 100% purity every time");
-		System.out.println("Material Features: Vegetarian");
-	}
+    public static void main(String[] parachute){
+    
+        System.out.println("main started");
+        String brandName = "Parachute Advansed";
+        String itemForm  = "Oil";
+        int netQuantity = 325;
+        int numberOfItems = 2;
+        String hairType = "All";
+        String materialType = "Alcohol Free";
+        String scent = "Aloe, Coconut";
+        String productBenefits = "Softening; Conditioning; Moisturizing; Frizz Control; Nourishing";
+        int liquidVolume = 325;
+        System.out.println("The brand name of the hair oil is "+brandName);
+        System.out.println("The item form is "+itemForm);
+        System.out.println("The net quantity is "+netQuantity+" millilitres");
+        System.out.println("The number of items is "+numberOfItems);
+        System.out.println("The hair oil is suitable for "+hairType+" hair");
+        System.out.println("The material type free is "+materialType);
+        System.out.println("The hair oil scent is "+scent);
+        System.out.println("The product benefits are "+productBenefits);
+        System.out.println("its volume is "+liquidVolume+" millilitres");
+        
+        System.out.println("main ended");
+    }
 }

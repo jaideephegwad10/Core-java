@@ -1,18 +1,21 @@
 class SmartPhone{
-	
-	public static void main(String[] iqooz9){
 
-		System.out.println("Processor - Powered by 4nm Snapdragon 6 Gen 1 with 560K+ AnTuTu Score that gives your phone lag free smooth experience.");
-
-		System.out.println("Battery - 6000mAh ultra slim Battery phone with 44W FlashCharge gives you up to 10 hours of binge with just 30 mins of charging. Along with 2 day battery 					with single charge, iQOO Z9x comes with 7.99mm Slim Design.");
-
-		System.out.println("Display - iQOO Z9x comes with 6.72' large display, 120Hz 7 level adaptive refresh rate and 2408x1080 resolution. Along with 1000nits high brightness mode(HBM) gives you clear sight even in direct sunlight. Along with it iQOOZ9x is also IP64 certified  against dust and water");
-
-		System.out.println("Entertainment: Dual Stereo Speakers with 300% Immersive Audio Booster enhances your multi-media experience.");
-
-		System.out.println("Operating System : Funtouch OS 14 based on Android 14 with 2 years of Android & 3 years of security update.");
+		static String brandName = "Apple Iphone";
+		static String operatingSystem  = "ios 14";
+		static double  cpuSpeed  = 3.23;
+		static int memoryStorage  = 128;
+		static double screenSize = 6.1;
 		
+	public static void main(String[] iphone){
+	
+		System.out.println("main started");
+
+		System.out.println("the brand name is "+brandName);
+		System.out.println("It works on os "+operatingSystem);
+		System.out.println("The cpu speed is "+cpuSpeed+ " GHz");
+		System.out.println("The memory storage is "+memoryStorage+" GB");
+		System.out.println("The screen size is "+screenSize);
+		
+		System.out.println("main ended");
 	}
-
-
 }
