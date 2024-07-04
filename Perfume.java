@@ -1,14 +1,15 @@
 class Perfume{
 
+		static String brandName = "Park Avenue";
+		static String itemForm  = "Liquid";
+		static int  itemVolume  = 120;
+		static String scent     = "wood";
+		static String specialFeature = "Long lasting";
+	
 	public static void main(String[] fragrance){
 	
 		System.out.println("main started");
-		String brandName = "Park Avenue";
-		String itemForm  = "Liquid";
-		int  itemVolume  = 120;
-		String scent     = "wood";
-		String specialFeature = "Long lasting";
-		
+	
 		System.out.println("The brand name of the perfume is "+brandName);
 		System.out.println("The form of the item is "+itemForm);
 		System.out.println("Volume of the perfume in ml is "+itemVolume);

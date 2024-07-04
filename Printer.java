@@ -1,20 +1,19 @@
 class Printer{
 
-        static String brandName = "Canon";
-        static String connectivityTechnology = "Wi-Fi, USB";
-        static String printingTechnology = "Inkjet";
-        static String specialFeatures = "Scan To E-Mail, Print through Canon SELPHY App, Mac OS X v10.8.5 (compatible), Windows 10, Windows 8, Windows 7 SP1, Windows Vista SP2 (compatible), Low cost cartridge, Auto Power On, Flatbed Scanner";
-        static String colour = "White/Blue";
-        static String modelName = "Pixma";
-        static String printerOutput = "Colour";
-        static int maxPrintSpeedColour = 4;
-        static int maxPrintSpeedMonochrome = 8;
-        static int itemWeight = 3500;
-		
     public static void main(String[] canon){
     
         System.out.println("main started");
-
+        String brandName = "Canon";
+        String connectivityTechnology = "Wi-Fi, USB";
+        String printingTechnology = "Inkjet";
+        String specialFeatures = "Scan To E-Mail, Print through Canon SELPHY App, Mac OS X v10.8.5 (compatible), Windows 10, Windows 8, Windows 7 SP1, Windows Vista SP2 (compatible), Low cost cartridge, Auto Power On, Flatbed Scanner";
+        String colour = "White/Blue";
+        String modelName = "Pixma";
+        String printerOutput = "Colour";
+        int maxPrintSpeedColour = 4;
+        int maxPrintSpeedMonochrome = 8;
+        int itemWeight = 3500;
+		
         System.out.println("The brand name of the printer is "+brandName);
         System.out.println("The connectivity technology is "+connectivityTechnology);
         System.out.println("The printing technology is "+printingTechnology);

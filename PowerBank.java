@@ -1,14 +1,13 @@
 class PowerBank{
 
-		static String brandName = "MI";
-		static String connectorType  = "USB, Micro USB";
-		static int  batteryCapacity  = 2000;
-		static String colour     = "black";
-		static String specialFeature = "Short Circuit Protection, Fast Charging";
-		 
 	public static void main(String[] battery){
 	
 		System.out.println("main started");
+		String brandName = "MI";
+		String connectorType  = "USB, Micro USB";
+		int  batteryCapacity  = 2000;
+		String colour     = "black";
+		String specialFeature = "Short Circuit Protection, Fast Charging";
 		
 		System.out.println("The brand name is "+brandName);
 		System.out.println("connector type is "+connectorType);

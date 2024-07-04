@@ -1,14 +1,13 @@
 class IceCream{
-		
-		static String brandName = "Amul";
-        static String speciality = "suitable for vegetarians";
-        static int itemWeight = 1;
-        static int packageWeight = 1;
-        static String packageInformation = "Tub";
-        
+
     public static void main(String[] amul){
     
         System.out.println("main started");
+        String brandName = "Amul";
+        String speciality = "suitable for vegetarians";
+        int itemWeight = 1;
+        int packageWeight = 1;
+        String packageInformation = "Tub";
         
         System.out.println("The brand  name of the dairy product is "+brandName);
         System.out.println("The speciality is "+speciality);

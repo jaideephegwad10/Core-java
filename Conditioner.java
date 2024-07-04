@@ -1,17 +1,19 @@
 class Conditioner{
 
+		static String brandName = "Tresemme";
+		static String itemForm  = "Liquid";
+		static int  netQuantity = 190;
+		static String hairType     = "Frizzy, Dry, Chemically Treated";
+		static String materialFeature = "Natural";
+		static String productBenefits = "smoothening";
+		static String ageRange = "adult";
+		static String scent = "Argon oil";
+		static int numberOfItems = 1;
+		
 	public static void main(String[] tresemme){
 	
 		System.out.println("main started");
-		String brandName = "Tresemme";
-		String itemForm  = "Liquid";
-		int  netQuantity = 190;
-		String hairType     = "Frizzy, Dry, Chemically Treated";
-		String materialFeature = "Natural";
-		String productBenefits = "smoothening";
-		String ageRange = "adult";
-		String scent = "Argon oil";
-		int numberOfItems = 1;
+		
 		System.out.println("The brand of the conditioner is "+brandName);
 		System.out.println("The conditioner form is "+itemForm);
 		System.out.println("The conditioner is made with "+materialFeature+" ingredients");
@@ -24,6 +26,4 @@ class Conditioner{
 		
 		System.out.println("main ended");
 	}
-	
-	
 }

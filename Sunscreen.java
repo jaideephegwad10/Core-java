@@ -1,20 +1,19 @@
 class Sunscreen{
 
-	    static String brandName = "Neutrogena";
-        static String scent = "Unscented";
-        static String productBenefits = "Non-Comedogenic";
-        static int sunProtectionFactor = 50;
-        static int itemWeight = 30;
-        static int numberOfItems = 1;
-        static double netQuantity = 30.0;
-        static String skinType = "All";
-        static String activeIngredients = "Helioplex";
-        static String itemDimensions = "1 x 1 x 1 Millimeters";
-        
     public static void main(String[] neutrogena){
     
         System.out.println("main started");
-    
+        String brandName = "Neutrogena";
+        String scent = "Unscented";
+        String productBenefits = "Non-Comedogenic";
+        int sunProtectionFactor = 50;
+        int itemWeight = 30;
+        int numberOfItems = 1;
+        double netQuantity = 30.0;
+        String skinType = "All";
+        String activeIngredients = "Helioplex";
+        String itemDimensions = "1 x 1 x 1 Millimeters";
+        
         System.out.println("The brand name of the sunscreen is "+brandName);
         System.out.println("The scent is "+scent);
         System.out.println("The product benefits are "+productBenefits);

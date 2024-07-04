@@ -1,6 +1,5 @@
 class Monitor{
 
-
 		static String brandName = "MSI";
 		static String resolution  = "FHD 1080p";
 		static int  screenSize  = 22;
@@ -10,8 +9,7 @@ class Monitor{
 	public static void main(String[] electronics){
 	
 		System.out.println("main started");
-		
-		
+
 		System.out.println("The monitor brand name is "+brandName);
 		System.out.println("It has a resolution of "+resolution);
 		System.out.println("Its screen size is "+screenSize);

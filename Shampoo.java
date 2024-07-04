@@ -1,20 +1,19 @@
 class Shampoo{
 
-        static String brandName = "Sunsilk";
-        static String itemForm  = "Liquid";
-        static String hairType = "All, Oily, Dry, Fine, Normal";
-        static String scent = "Amla";
-        static String ageRange = "Adult";
-        static String materialTypeFree = "Paraben Free";
-        static String specialFeature = "Not Tested On Animals";
-        static String productBenefits = "Frizziness";
-        static int liquidVolume = 1;
-        static String recommendedUses = "Nourishing, Provides Protein";
-        
     public static void main(String[] sunsilk){
     
         System.out.println("main started");
-
+        String brandName = "Sunsilk";
+        String itemForm  = "Liquid";
+        String hairType = "All, Oily, Dry, Fine, Normal";
+        String scent = "Amla";
+        String ageRange = "Adult";
+        String materialTypeFree = "Paraben Free";
+        String specialFeature = "Not Tested On Animals";
+        String productBenefits = "Frizziness";
+        int liquidVolume = 1;
+        String recommendedUses = "Nourishing, Provides Protein";
+        
         System.out.println("The brand name of the shampoo is "+brandName);
         System.out.println("The item form is "+itemForm);
         System.out.println("The shampoo is suitable for "+hairType+" hair");

@@ -1,20 +1,19 @@
 class TravelBag{
 
-        static String brandName = "FATMUG";
-        static String material = "Polyester";
-        static String colour = "Black";
-        static String productDimensions = "38L x 26W x 9H Centimeters";
-        static String specialFeature = "Zip Closure";
-        static String recommendedUses = "Clothing";
-        static String closureType = "Zipper";
-        static String shape = "Rectangular";
-        static int numberOfItems = 1;
-        static String size = "Medium-Small";
-        
     public static void main(String[] fatmug){
     
         System.out.println("main started");
-
+        String brandName = "FATMUG";
+        String material = "Polyester";
+        String colour = "Black";
+        String productDimensions = "38L x 26W x 9H Centimeters";
+        String specialFeature = "Zip Closure";
+        String recommendedUses = "Clothing";
+        String closureType = "Zipper";
+        String shape = "Rectangular";
+        int numberOfItems = 1;
+        String size = "Medium-Small";
+        
         System.out.println("The brand name of the bag is "+brandName);
         System.out.println("The material is "+material);
         System.out.println("The colour is "+colour);

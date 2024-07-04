@@ -1,15 +1,13 @@
 class Wallet{
-		
-		static String brandName = "Urban Forest";
-		static String colour  = "Black";
-		static String material  = "Leather";
-		static static String style     = "contemporary";
-		static String pattern = "Solid";
-		
+
 	public static void main(String[] leather){
 	
 		System.out.println("main started");
-		
+		String brandName = "Urban Forest";
+		String colour  = "Black";
+		String material  = "Leather";
+		String style     = "contemporary";
+		String pattern = "Solid";
 		
 		System.out.println("The brand name is "+brandName);
 		System.out.println("The colour is "+colour);

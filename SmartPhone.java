@@ -1,15 +1,14 @@
 class SmartPhone{
 
-		static String brandName = "Apple Iphone";
-		static String operatingSystem  = "ios 14";
-		static double  cpuSpeed  = 3.23;
-		static int memoryStorage  = 128;
-		static double screenSize = 6.1;
-		
 	public static void main(String[] iphone){
 	
 		System.out.println("main started");
-
+		String brandName = "Apple Iphone";
+		String operatingSystem  = "ios 14";
+		double  cpuSpeed  = 3.23;
+		int memoryStorage  = 128;
+		double screenSize = 6.1;
+		
 		System.out.println("the brand name is "+brandName);
 		System.out.println("It works on os "+operatingSystem);
 		System.out.println("The cpu speed is "+cpuSpeed+ " GHz");
