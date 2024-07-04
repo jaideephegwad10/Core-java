@@ -1,0 +1,11 @@
+class Sunscreen{
+
+    public static void main(String[] derma) {
+        System.out.println("PROVIDES BROAD SPECTRUM PROTECTION (PA++++): The PA grading system in sunscreens indicates the level of protection from the UVA rays. So, the presence of more than three ‘+’ signs signifies that sunscreen provides the best protection against UVA rays. Our SPF 50 1% Hyaluronic Sunscreen Aqua Gel with PA++++ formulated with the effective combination of Hyaluronic Acid and Vitamin E protects from sun damage, while also reducing fine lines, wrinkles and making your skin soft and supple.");
+        System.out.println("PROTECTS AGAINST BLUE LIGHT: Blue light, a type of high-energy visible light is emitted by several electronic devices. The blue light from these devices not only disrupts our sleep cycle but also damages our skin significantly. This is why we bring to you 1% Hyaluronic Sunscreen Aqua Gel with Vitamin E that not only protects your skin from the sun but also screens. Here’s your skin’s new BFF for healthy and damage-free.");
+        System.out.println("NON-GREASY & FRAGRANCE-FREE: Say goodbye to the greasy and oily finish of typical sunscreens. The Derma Co. 1% Hyaluronic Sunscreen Aqua Gel is fragrance-free and doesn’t clog your pores. The presence of 1% concentration of Hyaluronic Acid in this sunscreen makes it quick to absorb and provides intense hydration to the skin. Extremely lightweight in nature, the sunscreen dissolves like water, hence the name ‘Aqua Gel’.");
+        System.out.println("SAFE & EFFECTIVE FORMULATION: Free from toxins, fragrance, this sunscreen with PA++++ has a safe & effective formulation that offers a visible difference in 3-6 weeks.");
+        System.out.println("WHO IS IT SUITABLE FOR? Those looking for a non-greasy, fragrance-free broad spectrum protection against UV rays and blue light. Anyone with normal, oily, acne-prone or blemish-prone skin can use this sunscreen.");
+        System.out.println("This product is protected by Transparency, which verifies a unit’s authenticity and enables you to view rich information about the product you purchased. When you receive your product, please look for the Transparency logo and code. You can scan it to verify its authenticity with the Transparency app. To download the Transparency app, get it on the App Store or Google Play.");
+    }
+}
