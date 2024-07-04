@@ -1,19 +1,20 @@
 class FaceWash{
 
+        static String brandName = "Himalaya";
+        static double itemWeight  = 0.44;
+        static String itemDimensions = "14 x 8 x 17 Centimeters";
+        static String scent = "Neem";
+        static String ageRange = "Youth, Adult";
+        static String skinType = "Normal";
+        static int itemPackageQuantity = 1;
+        static String productBenefits = "Hydrating, Acne Prevention, Oil Control, Moisturizing";
+        static String specialFeature = "Unscented";
+        static String activeIngredients = "Neem, Turmeric";
+		
     public static void main(String[] himalaya){
     
         System.out.println("main started");
-        String brandName = "Himalaya";
-        double itemWeight  = 0.44;
-        String itemDimensions = "14 x 8 x 17 Centimeters";
-        String scent = "Neem";
-        String ageRange = "Youth, Adult";
-        String skinType = "Normal";
-        int itemPackageQuantity = 1;
-        String productBenefits = "Hydrating, Acne Prevention, Oil Control, Moisturizing";
-        String specialFeature = "Unscented";
-        String activeIngredients = "Neem, Turmeric";
-		
+
         System.out.println("The brand name of the moisturizer is "+brandName);
         System.out.println("The item weight is "+itemWeight+" kg");
         System.out.println("The item dimensions are "+itemDimensions);

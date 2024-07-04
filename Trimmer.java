@@ -1,20 +1,18 @@
 class Trimmer{
 
-		static String recommendedUses = "Beard, Hair, Head";
-        static String colour = "Black";
-        static String hairType = "All";
-        static double itemWeight = 0.74;
-        static String brandName = "Philips";
-        static String powerSource = "Battery Powered";
-        static String material = "Plastic";
-        static String specialFeature = "Cordless, Rechargeable, Detachable, Fast Charge, Multigroomer, Self-sharpening blades";
-        static String itemDimensions = "29.1 x 15.1 x 23.8 Centimeters";
-        static String bladeMaterial = "Rubber, self sharpening stainless steel blades";
-        
-
     public static void main(String[] philips){
     
         System.out.println("main started");
+        String recommendedUses = "Beard, Hair, Head";
+        String colour = "Black";
+        String hairType = "All";
+        double itemWeight = 0.74;
+        String brandName = "Philips";
+        String powerSource = "Battery Powered";
+        String material = "Plastic";
+        String specialFeature = "Cordless, Rechargeable, Detachable, Fast Charge, Multigroomer, Self-sharpening blades";
+        String itemDimensions = "29.1 x 15.1 x 23.8 Centimeters";
+        String bladeMaterial = "Rubber, self sharpening stainless steel blades";
         
         System.out.println("Recommended uses for the product: " + recommendedUses);
         System.out.println("Colour: " + colour);

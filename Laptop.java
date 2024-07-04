@@ -1,18 +1,19 @@
 class Laptop{
 
-	public static void main(String[] asus){
+		static String brandName = "ASUS";
+		static String modelName = "VivoBook 15 (2021)";
+		static String colour  = "Transparent Silver";
+		static int  hardDiskSpace  = 512;
+		static String cpuModel     = "Celeron N4020";
+		static int ramSize = 4;
+		static String operatingSystem = "Windows 11 Home";
+		static String specialFeature = "Fingerprint Reader, Backlit Keyboard, Anti Glare Coating";
+		static String graphicsCard = "Integrated";
+		
+	public  void main(String[] asus){
 	
 		System.out.println("main started");
-		String brandName = "ASUS";
-		String modelName = "VivoBook 15 (2021)";
-		String colour  = "Transparent Silver";
-		int  hardDiskSpace  = 512;
-		String cpuModel     = "Celeron N4020";
-		int ramSize = 4;
-		String operatingSystem = "Windows 11 Home";
-		String specialFeature = "Fingerprint Reader, Backlit Keyboard, Anti Glare Coating";
-		String graphicsCard = "Integrated";
-		
+	
 		System.out.println("The laptop brand name is "+brandName);
 		System.out.println("The model name is "+modelName);
 		System.out.println("The colour is "+colour);

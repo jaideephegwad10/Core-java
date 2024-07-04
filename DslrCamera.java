@@ -1,20 +1,21 @@
 class DslrCamera{
 
+        static String compatibleMountings = "Sony E";
+        static String photoSensorTechnology = "CMOS";
+        static String supportedFileFormat = "aps-c";
+        static String imageStabilisation = "Optical";
+        static int maximumFocalLength = 50; 
+        static int opticalZoom = 3; 
+        static double maximumAperture = 3.5; 
+        static String meteringDescription = "Evaluative";
+        static String brand = "Sony";
+        static String modelName = "Alpha";
+        
     public static void main(String[] sony) {
     
         System.out.println("main started");
 		
-        String compatibleMountings = "Sony E";
-        String photoSensorTechnology = "CMOS";
-        String supportedFileFormat = "aps-c";
-        String imageStabilisation = "Optical";
-        int maximumFocalLength = 50; 
-        int opticalZoom = 3; 
-        double maximumAperture = 3.5; 
-        String meteringDescription = "Evaluative";
-        String brand = "Sony";
-        String modelName = "Alpha";
-        
+
         System.out.println("The camera's compatible mountings are " + compatibleMountings);
         System.out.println("The photo sensor technology is " + photoSensorTechnology);
         System.out.println("The supported file format is " + supportedFileFormat);
@@ -28,6 +29,4 @@ class DslrCamera{
         
         System.out.println("main ended");
     }
-	
-	
 }
