@@ -1,4 +1,4 @@
-class Television{
+class Blender{
 
 	static boolean isConnected = false;
 	
@@ -6,7 +6,7 @@ class Television{
 	
 		if(isConnected==false){
 			isConnected = true;
-		System.out.println("TV has turned on..");
+		System.out.println("Blender has turned on..");
 		}
 		
 	return ;	
@@ -16,7 +16,7 @@ class Television{
 	
 		if(isConnected==true){
 			isConnected = false;
-		System.out.println("TV has turned off..");
+		System.out.println("Blender has turned off..");
 		}
 	return ;	
 	}

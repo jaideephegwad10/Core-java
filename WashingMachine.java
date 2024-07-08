@@ -1,23 +1,20 @@
-class Television{
+class WashingMachine{
 
 	static boolean isConnected = false;
 	
 	public static void turnOn(){
 	
 		if(isConnected==false){
-			isConnected = true;
-		System.out.println("TV has turned on..");
+			isConnected=true;
+		System.out.println("Washing Machine has turned on..");
 		}
-		
-	return ;	
 	}
 	
 	public static void turnOff(){
 	
 		if(isConnected==true){
 			isConnected = false;
-		System.out.println("TV has turned off..");
+		System.out.println("Washing Machine has turned off..");
 		}
-	return ;	
 	}
 }
