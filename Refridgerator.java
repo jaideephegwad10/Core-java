@@ -1,4 +1,4 @@
-class Television{
+class Refridgerator{
 
 	static boolean isConnected = false;
 	
@@ -6,7 +6,7 @@ class Television{
 	
 		if(isConnected==false){
 			isConnected = true;
-		System.out.println("TV has turned on..");
+		System.out.println("Fridge has turned on..");
 		}
 		
 	return ;	
@@ -16,8 +16,9 @@ class Television{
 	
 		if(isConnected==true){
 			isConnected = false;
-		System.out.println("TV has turned off..");
+		System.out.println("Fridge has turned off..");
 		}
 	return ;	
 	}
+}
 }
