@@ -4,8 +4,12 @@ class BlenderRunner{
 	
 		System.out.println("main started");
 		
-		Blender.turnOn();
-		Blender.turnOff();
+		Blender.onOrOff();
+		Blender.increaseSpeed();
+		Blender.increaseSpeed();
+		Blender.decreaseSpeed();
+		Blender.decreaseSpeed();
+		Blender.onOrOff();
 		
 		System.out.println("main ended");
 	}

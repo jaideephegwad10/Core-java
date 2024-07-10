@@ -4,8 +4,14 @@ class VacuumCleanerRunner{
 	
 		System.out.println("main started");
 		
-		VacuumCleaner.turnOn();
-		VacuumCleaner.turnOff();
+		VacuumCleaner.onOrOff();
+		VacuumCleaner.increaseSpeed();
+		VacuumCleaner.increaseSpeed();
+		VacuumCleaner.increaseSpeed();
+		VacuumCleaner.decreaseSpeed();
+		VacuumCleaner.decreaseSpeed();
+		VacuumCleaner.decreaseSpeed();
+		VacuumCleaner.onOrOff();
 		
 		System.out.println("main ended");
 	}

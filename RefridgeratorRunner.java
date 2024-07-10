@@ -4,8 +4,12 @@ class RefridgeratorRunner{
 	
 		System.out.println("main started");
 		
-		Refridgerator.turnOn();
-		Refridgerator.turnOff();
+		Refridgerator.onOrOff();
+		Refridgerator.increaseTemperature();
+		Refridgerator.increaseTemperature();
+		Refridgerator.decreaseTemperature();
+		Refridgerator.decreaseTemperature();
+		Refridgerator.onOrOff();
 		
 		System.out.println("main ended");
 	}

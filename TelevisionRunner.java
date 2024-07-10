@@ -4,8 +4,15 @@ class TelevisionRunner{
 	
 		System.out.println("main started");
 		
-		Television.turnOn();
-		Television.turnOff();
+			Television.turnOn();
+			Television.increaseVolume();
+			Television.increaseVolume();
+			Television.increaseVolume();
+			
+			Television.decreaseVolume();
+			Television.decreaseVolume();
+			Television.decreaseVolume();
+			Television.turnOff();
 		
 		System.out.println("main ended");
 	}

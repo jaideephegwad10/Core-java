@@ -4,8 +4,14 @@ class WashingMachineRunner{
 	
 		System.out.println("main started");
 		
-		WashingMachine.turnOn();
-		WashingMachine.turnOff();
+		WashingMachine.onOrOff();
+		WashingMachine.increaseSpeed();
+		WashingMachine.increaseSpeed();
+		WashingMachine.increaseSpeed();
+		WashingMachine.decreaseSpeed();
+		WashingMachine.decreaseSpeed();
+		WashingMachine.decreaseSpeed();
+		WashingMachine.onOrOff();
 		
 		System.out.println("main ended");
 	}

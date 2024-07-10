@@ -4,8 +4,12 @@ class IronBoxRunner{
 	
 		System.out.println("main started");
 		
-		IronBox.turnOn();
-		IronBox.turnOff();
+		IronBox.onOrOff();
+		IronBox.increaseTemperature();
+		IronBox.increaseTemperature();
+		IronBox.decreaseTemperature();
+		IronBox.decreaseTemperature();
+		IronBox.onOrOff();
 		
 		System.out.println("main ended");
 	}
