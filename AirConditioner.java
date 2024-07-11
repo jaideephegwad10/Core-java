@@ -4,19 +4,14 @@ class AirConditioner{
 	static int     currentValue		= 0;
 	static int		maxTemperature	= 10;
 	static int 		minTemperature	= 0;
-	public static void turnOn(){
 	
-		if(isConnected==false){
+	public static void onOrOff(){
+	
+		if(!isConnected){
 			isConnected = true;
 		System.out.println("AirConditioner is turned on..");
 		}
-		
-	return ;	
-	}
-	
-	public static void turnOff(){
-	
-		if(isConnected==true){
+		else if(isConnected){
 			isConnected = false;
 		System.out.println("AirConditioner is turned off..");
 		}
@@ -58,3 +53,4 @@ class AirConditioner{
 		System.out.println("decreaseTemperature ended");
 	return ;	
 	}
+}

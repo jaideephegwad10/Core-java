@@ -6,7 +6,11 @@ class Speaker{
 	static int     minVolume    = 0;
 	 
 	public static boolean onOrOff(){
-	
+		
+		isConnected = (isConnected==false)? true : false;
+		// readable 
+		//isConnected = !isConnected;
+	/* 
 	if(!isConnected) isConnected=true;
 		//System.out.println("Speaker has turned on..");
 	
@@ -14,8 +18,8 @@ class Speaker{
 	else  isConnected=false;
 		//System.out.println("Speaker has turned off..");
 	
-	
-	return isConnected;
+	*/
+	return isConnected; 
 	} 
 	
 	public static void increaseVolume(){
