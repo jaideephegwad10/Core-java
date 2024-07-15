@@ -5,7 +5,7 @@ class DominosRunner{
 	public static void main(String[] pizza){
 		System.out.println("main started");
 		
-		int price = Dominos.getPriceOfPizza(pizzaName);
+		int price = Dominos.getPriceOfPizza(pizzaName,3);
 		System.out.println("The price of "+pizzaName+" is "+price);
 		
 		System.out.println("main ended");

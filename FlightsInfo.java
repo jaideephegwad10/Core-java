@@ -1,111 +1,100 @@
-class FlightsInfo{
+class FlightsInfo {
+    
+    public static int getFlightPriceByDestinationName(String destinationName) {
+        
+        int ticketPrice;
+        
+        if (destinationName == "Chhatrapati Shivaji Maharaj International Airport - BOM") return ticketPrice = 4200;
+        
+        if (destinationName == "Indira Gandhi International Airport  - DEL") return ticketPrice = 5311;
+        
+        if (destinationName == "Chennai International Airport - DEL") return ticketPrice = 1500;
+        
+        if (destinationName == "Rajiv Gandhi International Airport - HYD") return ticketPrice = 2200;
+        
+        if (destinationName == "Netaji Subhas Chandra Bose International Airport - CCU") return ticketPrice = 5500;
+        
+        if (destinationName == "Pune International Airport - PNQ") return ticketPrice = 3800;
+        
+        if (destinationName == "Dabolim Airport - GOI") return ticketPrice = 2084;
+        
+        if (destinationName == "Sardar Vallabhbhai Patel International Airport - AMD") return ticketPrice = 3300;
+        
+        if (destinationName == "Jaipur International Airport - JAI") return ticketPrice = 5100;
+        
+        if (destinationName == "Cochin International Airport - COK") return ticketPrice = 1800;
+        
+        if (destinationName == "Trivandrum International Airport - TRV") return ticketPrice = 2400;
+        
+        if (destinationName == "Mangalore International Airport - IXE") return ticketPrice = 2600;
+        
+        if (destinationName == "Visakhapatnam Airport - VTZ") return ticketPrice = 3500;
+        
+        if (destinationName == "Chaudhary Charan Singh International Airport - LKO") return ticketPrice = 6000;
+        
+        if (destinationName == "Jay Prakash Narayan International Airport - PAT") return ticketPrice = 6800;
+        
+        if (destinationName == "Coimbatore International Airport - CJB") return ticketPrice = 1800;
+        
+        if (destinationName == "Dr. Babasaheb Ambedkar International Airport - NAG") return ticketPrice = 4000;
+        
+        if (destinationName == "Devi Ahilyabai Holkar International Airport - IDR") return ticketPrice = 4500;
+        
+        if (destinationName == "Biju Patnaik International Airport - BBI") return ticketPrice = 5700;
+        
+        if (destinationName == "Lal Bahadur Shastri International Airport - VNS") return ticketPrice = 6500;
+        
+        else
+            System.out.println(destinationName + " not found");
+        return 0;    
+    }
 	
-	public static int getFlightPriceByDestinationName(String flightName){
-	
-		int ticketPrice ;
-		
-		if(flightName == "Chhatrapati Shivaji Maharaj International Airport - BOM"){//1
-			ticketPrice = 4200;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Indira Gandhi International Airport  - DEL"){//2
-			ticketPrice = 5311;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Chennai International Airport - DEL"){//3
-			ticketPrice = 1500;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Rajiv Gandhi International Airport - HYD"){//4
-			ticketPrice = 2200;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Netaji Subhas Chandra Bose International Airport - CCU"){//5
-			ticketPrice = 5500;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Pune International Airport - PNQ"){//6
-			ticketPrice = 3800;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Dabolim Airport - GOI"){//7
-			ticketPrice = 2084;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Sardar Vallabhbhai Patel International Airport - AMD"){//8
-			ticketPrice = 3300;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Jaipur International Airport - JAI"){//9
-			ticketPrice = 5100;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Cochin International Airport - COK"){//10
-			ticketPrice = 1800;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Trivandrum International Airport - TRV"){//11
-			ticketPrice = 2400;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Mangalore International Airport - IXE"){//12
-			ticketPrice = 2600;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Visakhapatnam Airport - VTZ"){//13
-			ticketPrice = 3500;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Chaudhary Charan Singh International Airport - LKO"){//14
-			ticketPrice = 6000;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Jay Prakash Narayan International Airport - PAT"){//15
-			ticketPrice = 6800;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Coimbatore International Airport - CJB"){//16
-			ticketPrice = 1800;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Dr. Babasaheb Ambedkar International Airport - NAG"){//17
-			ticketPrice = 4000;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Devi Ahilyabai Holkar International Airport - IDR"){//18
-			ticketPrice = 4500;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Biju Patnaik International Airport - BBI"){//19
-			ticketPrice = 5700;
-		return ticketPrice ;
-		}
-		
-		if(flightName == "Lal Bahadur Shastri International Airport - VNS"){//20
-			ticketPrice = 6500;
-		return ticketPrice ;
-		}
-		
-		else
-			System.out.println(flightName+" not found");
-	return 0;	
-	}
+	public static int getFlightPriceByDestinationName(String destinationName, int numberOfPerson) {
+        
+        int ticketPrice;
+        
+        if (destinationName == "Chhatrapati Shivaji Maharaj International Airport - BOM") return ticketPrice = 4200*numberOfPerson;
+        
+        if (destinationName == "Indira Gandhi International Airport  - DEL") return ticketPrice = 5311*numberOfPerson;
+        
+        if (destinationName == "Chennai International Airport - DEL") return ticketPrice = 1500*numberOfPerson;
+        
+        if (destinationName == "Rajiv Gandhi International Airport - HYD") return ticketPrice = 2200*numberOfPerson;
+        
+        if (destinationName == "Netaji Subhas Chandra Bose International Airport - CCU") return ticketPrice = 5500*numberOfPerson;
+        
+        if (destinationName == "Pune International Airport - PNQ") return ticketPrice = 3800*numberOfPerson;
+        
+        if (destinationName == "Dabolim Airport - GOI") return ticketPrice = 2084*numberOfPerson;
+        
+        if (destinationName == "Sardar Vallabhbhai Patel International Airport - AMD") return ticketPrice = 3300*numberOfPerson;
+        
+        if (destinationName == "Jaipur International Airport - JAI") return ticketPrice = 5100*numberOfPerson;
+        
+        if (destinationName == "Cochin International Airport - COK") return ticketPrice = 1800*numberOfPerson;
+        
+        if (destinationName == "Trivandrum International Airport - TRV") return ticketPrice = 2400*numberOfPerson;
+        
+        if (destinationName == "Mangalore International Airport - IXE") return ticketPrice = 2600*numberOfPerson;
+        
+        if (destinationName == "Visakhapatnam Airport - VTZ") return ticketPrice = 3500*numberOfPerson;
+        
+        if (destinationName == "Chaudhary Charan Singh International Airport - LKO") return ticketPrice = 6000*numberOfPerson;
+        
+        if (destinationName == "Jay Prakash Narayan International Airport - PAT") return ticketPrice = 6800*numberOfPerson;
+        
+        if (destinationName == "Coimbatore International Airport - CJB") return ticketPrice = 1800*numberOfPerson;
+        
+        if (destinationName == "Dr. Babasaheb Ambedkar International Airport - NAG") return ticketPrice = 4000*numberOfPerson;
+        
+        if (destinationName == "Devi Ahilyabai Holkar International Airport - IDR") return ticketPrice = 4500*numberOfPerson;
+        
+        if (destinationName == "Biju Patnaik International Airport - BBI") return ticketPrice = 5700*numberOfPerson;
+        
+        if (destinationName == "Lal Bahadur Shastri International Airport - VNS") return ticketPrice = 6500*numberOfPerson;
+        
+        else
+            System.out.println(destinationName + " not found");
+        return 0;    
+    }
 }

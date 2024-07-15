@@ -5,7 +5,7 @@ class PvrRunner{
 	public static void main(String[] movie){
 		System.out.println("main started");
 		
-		int price = Pvr.searchMoviePriceByName(movieName);
+		int price = Pvr.searchMoviePriceByName(movieName, 3);
 		System.out.println("The price for "+movieName+" is "+price);
 		
 		System.out.println("main ended");
