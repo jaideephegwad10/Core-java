@@ -16,7 +16,16 @@ class BankAccount {
         System.out.println("Creating Bank account...");
 
         boolean isAccountCreated = false;
-        boolean isNameValid = false;
+        
+        return isAccountCreated = validateAccountDetails( name,  number,  bank,  type,  balance, 
+															password,  address,  email,  mobile,  pan);
+    }
+
+	public static boolean validateAccountDetails(String name, String number, String bank, String type, double balance, 
+                                        String password, String address, String email, long mobile, String pan){
+		
+		boolean isAccountValid = false;
+		boolean isNameValid = false;
         boolean isNumberValid = false;
         boolean isBankValid = false;
         boolean isTypeValid = false;
@@ -99,13 +108,11 @@ class BankAccount {
 
         if (isNameValid && isNumberValid && isBankValid && isTypeValid && isBalanceValid && isPasswordValid &&
             isAddressValid && isEmailValid && isMobileValid && isPanValid) {
-            isAccountCreated = true;
+            isAccountValid = true;
         }
-
-        System.out.println("Account creation status: " + isAccountCreated);
-        return isAccountCreated;
-    }
-
+		return isAccountValid;
+	}
+	
     public static void readAccountData() {
         System.out.println("Fetching account details...");
         System.out.println("Account Holder Name: " + accountHolderName);

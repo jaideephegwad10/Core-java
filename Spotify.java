@@ -11,15 +11,60 @@ class Spotify{
 		
 		boolean isAccountCreated = false;
 		
-		email = emailIn;
-		setPassword = setPasswordIn;
-		name = nameIn;
-		dob = dobIn;
-		gender = genderIn;
+		isAccountCreated = validateSpotifyUserDetails(emailIn,setPasswordIn,nameIn,dobIn,genderIn);
 		
 		System.out.println("Account created successfully..");
 		
-		return isAccountCreated = true;
+		return isAccountCreated;
+	}
+	
+	public static boolean validateSpotifyUserDetails(String emailIn, String setPasswordIn, String nameIn , String dobIn , String genderIn){
+		
+		boolean isAccountValid = false;
+		boolean isEmailValid = false;
+		boolean isPasswordValid = false;
+		boolean isNameValid = false;
+		boolean isDobValid = false;
+		boolean isGenderValid = false;
+		
+		if(emailIn!=null){
+			email = emailIn;
+			isEmailValid = true;
+		}
+		else
+			System.out.println("email is invalid");
+		
+		if(setPasswordIn!=null){
+			setPassword = setPasswordIn;
+			isPasswordValid = true;
+		}
+		else
+			System.out.println("password is invalid");
+		
+		if(nameIn!=null){
+			name = nameIn;
+			isNameValid = true;
+		}
+		else
+			System.out.println("name is invalid");
+
+		if(dobIn!=null){
+			dob = dobIn;
+			isDobValid = true;
+		}
+		else
+			System.out.println("dob is invalid");
+		
+		if(genderIn!=null){
+			gender = genderIn;
+			isGenderValid = true;
+		}
+		else
+			System.out.println("gender is invalid");
+
+		if(isEmailValid && isPasswordValid && isNameValid && isDobValid && isGenderValid) isAccountValid = true;
+		
+		return isAccountValid;	
 	}
 	
 	public static void readData(){

@@ -16,7 +16,16 @@ class XworkzRegistration {
         System.out.println("Registering student...");
 
         boolean isRegistrationSuccessful = false;
-        boolean isNameValid = false;
+        
+        return isRegistrationSuccessful = validateRegistrationDetails( name,  contact,  whatsapp,  email,  usnIn, 
+																		qualificationIn,  streamIn,  college,  year,  offer);
+    }
+	
+	public static boolean validateRegistrationDetails(String name, long contact, long whatsapp, String email, String usnIn, 
+                                          String qualificationIn, String streamIn, String college, int year, String offer){
+		
+		boolean isRegistrationValid = false;
+		boolean isNameValid = false;
         boolean isContactValid = false;
         boolean isWhatsappValid = false;
         boolean isEmailValid = false;
@@ -99,12 +108,10 @@ class XworkzRegistration {
 
         if (isNameValid && isContactValid && isWhatsappValid && isEmailValid && isUsnValid && isQualificationValid && 
             isStreamValid && isCollegeValid && isYearValid && isOfferedAsValid) {
-            isRegistrationSuccessful = true;
+            isRegistrationValid = true;
         }
-
-        System.out.println("Registration status: " + isRegistrationSuccessful);
-        return isRegistrationSuccessful;
-    }
+		return isRegistrationValid;
+	}
 
     public static void readStudentData() {
         System.out.println("Fetching student details...");

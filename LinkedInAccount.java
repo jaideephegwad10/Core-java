@@ -19,7 +19,15 @@ class LinkedInAccount {
         System.out.println("Creating LinkedIn account...");
 
         boolean isAccountCreated = false;
-        boolean isNameValid = false;
+        return isAccountCreated = validateLinkedInUserDetails(name, email, password, confirmPassword, phoneNumber, currentJob, companyName, college, degree, fieldOfStudy, graduationYear, skills);     
+    }
+	
+	public static boolean validateLinkedInUserDetails(String name, String email, String password, String confirmPassword, String phoneNumber, 
+                                        String currentJob, String companyName, String college, String degree, 
+                                        String fieldOfStudy, String graduationYear, String skills){
+		
+		boolean isAccountValid = false;
+		boolean isNameValid = false;
         boolean isEmailValid = false;
         boolean isPasswordValid = false;
         boolean isConfirmPasswordValid = false;
@@ -119,12 +127,11 @@ class LinkedInAccount {
         if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isPhoneNumberValid &&
             isCurrentJobValid && isCompanyNameValid && isCollegeValid && isDegreeValid && isFieldOfStudyValid &&
             isGraduationYearValid && isSkillsValid) {
-            isAccountCreated = true;
+            isAccountValid = true;
         }
-
-        System.out.println("Account creation status: " + isAccountCreated);
-        return isAccountCreated;
-    }
+			
+		return isAccountValid;	
+	}
 
     public static void readAccountData() {
         System.out.println("Fetching account details...");

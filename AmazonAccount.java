@@ -10,7 +10,14 @@ class AmazonAccount {
         System.out.println("Creating Amazon account...");
 
         boolean isAccountCreated = false;
-        boolean isNameValid = false;
+        isAccountCreated = validateAmazonUsersDetails(name , email, password, confirmPassword, mobileNumber);
+        if(isAccountCreated) System.out.println("Account creation status: " + isAccountCreated);
+        return isAccountCreated;
+    }
+	public static boolean validateAmazonUsersDetails(String name, String email, String password, String confirmPassword, long mobileNumber){
+		
+		boolean isAccountValid = false;
+		boolean isNameValid = false;
         boolean isEmailValid = false;
         boolean isPasswordValid = false;
         boolean isConfirmPasswordValid = false;
@@ -52,14 +59,12 @@ class AmazonAccount {
         }
 
         if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid && isMobileNumberValid) {
-            isAccountCreated = true;
+            isAccountValid = true;
         }
+	return isAccountValid;
+	}
 
-        System.out.println("Account creation status: " + isAccountCreated);
-        return isAccountCreated;
-    }
-
-    public static void readAccountData() {
+    public static void readAccountData(){
         System.out.println("Fetching account details...");
         System.out.println("Name: " + userName);
         System.out.println("Email: " + userEmail);
