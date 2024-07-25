@@ -13,11 +13,21 @@ class MrpStoreRunner{
 				isBrandNameAdded = MrpStore.addBrandName("Blenders");
 				isBrandNameAdded = MrpStore.addBrandName("Sula Vineyaeds");
 				isBrandNameAdded = MrpStore.addBrandName("McDowell's No.1 ");
-		if(isBrandNameAdded){
+		if(!isBrandNameAdded){
+			
 			MrpStore.printBrandNames();
 		}
 		else
 			System.out.println("Brand name could not be added");
+		boolean isBrandNameUpdated = MrpStore.updateBrandName("Tuborg", "Imperial Blue");
+		if(!isBrandNameUpdated){
+			
+			MrpStore.printBrandNames();
+		}
+		else
+			System.out.println("Brand name could not be updated");
+		boolean isBrandNameDeleted = MrpStore.deleteBrandName("Signature");
+			MrpStore.printBrandNames();
 		
 		System.out.println("main started");		
 	}

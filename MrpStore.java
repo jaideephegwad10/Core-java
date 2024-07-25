@@ -1,3 +1,5 @@
+import java.util.*;
+
 class MrpStore{
 
 	static String brandNames[] = {null,null,null,null,null,null,null,null,null,null,null};
@@ -27,5 +29,42 @@ class MrpStore{
 		System.out.println("Available brands are");
 		for(String brandName : brandNames)
 			System.out.println(brandName);
+	}
+	
+	public static boolean updateBrandName(String oldBrandName, String newBrandName){
+		System.out.println("update operation started");
+		
+		boolean isBrandNameUpdated = false;
+		for(int position = 0; position < brandNames.length ; position++){
+			
+			if(brandNames[position] == oldBrandName){
+				brandNames[position] = newBrandName;
+				isBrandNameUpdated = true;
+			}
+		}
+		if(!isBrandNameUpdated)
+			System.out.println(oldBrandName+" not found");
+		
+		System.out.println("update operation ended");
+	return isBrandNameUpdated;
+	}
+	
+	public static boolean deleteBrandName(String delete){
+		
+		boolean isBrandNameDeleted = false;
+		int position, newPosition;
+		for(position = 0 , newPosition = 0 ; position<brandNames.length ; position++){
+			if(brandNames[position]!=delete){
+				brandNames[newPosition] = brandNames[position];
+				newPosition++;
+			}
+			else
+				isBrandNameDeleted = true;
+		}
+			brandNames = Arrays.copyOf(brandNames,newPosition);
+			
+			if(!isBrandNameDeleted)
+				System.out.println(delete+" not found");
+		return isBrandNameDeleted;	
 	}
 }

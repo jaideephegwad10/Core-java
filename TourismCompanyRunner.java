@@ -15,7 +15,11 @@ class TourismCompanyRunner {
             TourismCompany.printPlaceNames();
         } else
             System.out.println("Place name could not be added");
-
+		boolean isPlaceNameUpdated = TourismCompany.updatePlaceName("Red Fort","kashmir");
+			TourismCompany.printPlaceNames();
+		boolean isPlaceNameDeleted = 	TourismCompany.deletePlaceName("India Gate");
+			TourismCompany.printPlaceNames();
+			
         System.out.println("main ended");
     }
 }

@@ -1,4 +1,4 @@
-class MedicineStoreRunner{
+class MedicalStoreRunner{
 
 	public static void main(String[] tea){
 		System.out.println("main started");
@@ -19,6 +19,14 @@ class MedicineStoreRunner{
 		}
 		else
 			System.out.println("medicine name could not be added");
+		boolean isMedicineNameUpdated = MedicalStore.updateMedicineName("Metformin","Dolo");
+		if(isMedicineNameUpdated)
+			MedicalStore.printMedicineNames();
+		
+		boolean isMedicineNameDeleted = MedicalStore.deleteMedicineName("Lisinopril");
+		if(isMedicineNameDeleted)
+			MedicalStore.printMedicineNames();
+		
 		
 		System.out.println("main started");		
 	}

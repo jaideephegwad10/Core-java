@@ -10,12 +10,19 @@ class JuiceShopRunner{
 				isJuiceNameAdded = JuiceShop.addJuiceName("apple");
 				isJuiceNameAdded = JuiceShop.addJuiceName("musk melon");
 				isJuiceNameAdded = JuiceShop.addJuiceName("lime");
-		//if(isJuiceNameAdded){
+		if(isJuiceNameAdded){
 			JuiceShop.displayJuiceNames();
-		/* }
+		 }
 		else
-			System.out.println("Juice name could not be added"); */
+			System.out.println("Juice name could not be added");
 		
+		boolean isJuiceNameUpdated = JuiceShop.updateJuiceName("orange","chikoo");
+		if(isJuiceNameUpdated)
+			JuiceShop.displayJuiceNames();
+		
+		boolean isJuiceNameDeleted = JuiceShop.deleteJuiceName("apple");
+		if(isJuiceNameDeleted)
+			JuiceShop.displayJuiceNames();
 		System.out.println("main ended");		
 	}
 }

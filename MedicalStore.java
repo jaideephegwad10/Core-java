@@ -1,3 +1,5 @@
+import java.util.*;
+
 class MedicalStore{
 
 	static String medicineNames[] = {null,null,null,null,null,null,null,null,null,null};
@@ -28,4 +30,42 @@ class MedicalStore{
 		for(String medicineName : medicineNames)
 			System.out.println(medicineName);
 	}
+	
+	public static boolean updateMedicineName(String oldMedicineName, String newMedicineName){
+		System.out.println("update operation started");
+		
+		boolean isMedicineNameUpdated = false;
+		for(int position = 0; position < medicineNames.length ; position++){
+			
+			if(medicineNames[position] == oldMedicineName){
+				medicineNames[position] = newMedicineName;
+				isMedicineNameUpdated = true;
+			}
+		}
+		if(!isMedicineNameUpdated)
+			System.out.println(oldMedicineName+" not found");
+		
+		System.out.println("update operation ended");
+	return isMedicineNameUpdated;
+	}
+	
+	public static boolean deleteMedicineName(String delete){
+		
+		boolean isMedicineNameDeleted = false;
+		int position, newPosition;
+		for(position = 0 , newPosition = 0 ; position<medicineNames.length ; position++){
+			if(medicineNames[position]!=delete){
+				medicineNames[newPosition] = medicineNames[position];
+				newPosition++;
+			}
+			else
+				isMedicineNameDeleted = true;
+		}
+			medicineNames = Arrays.copyOf(medicineNames,newPosition);
+			
+			if(!isMedicineNameDeleted)
+				System.out.println(delete+" not found");
+		return isMedicineNameDeleted;	
+	}
+	
 }
