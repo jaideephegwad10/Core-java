@@ -54,7 +54,7 @@ class BillRunner{
 		ref3.billIssueDate = "30/10";
 		ref3.billDueDate = "10/11";
 		ref3.isBillPaid = false;
-		ref3.isBillLatest = false;
+		ref3.isBillLatest = true;
 		ref3.isFinalBill = false;
 		ref3.taxInclusiveBill = false;
 		ref3.billAmt = 741.32;    
@@ -68,7 +68,7 @@ class BillRunner{
 		ref4.billIssueDate = "30/11";
 		ref4.billDueDate = "10/12";
 		ref4.isBillPaid = true;
-		ref4.isBillLatest = false;
+		ref4.isBillLatest = true;
 		ref4.isFinalBill = false;
 		ref4.taxInclusiveBill = true;
 		ref4.billAmt = 963.78;    
@@ -110,7 +110,7 @@ class BillRunner{
 		ref7.billIssueDate = "30/03";
 		ref7.billDueDate = "10/04";
 		ref7.isBillPaid = false;
-		ref7.isBillLatest = false;
+		ref7.isBillLatest = true;
 		ref7.isFinalBill = true;
 		ref7.taxInclusiveBill = true;
 		ref7.billAmt = 465.56;    
@@ -138,7 +138,7 @@ class BillRunner{
 		ref9.billIssueDate = "30/05";
 		ref9.billDueDate = "10/06";
 		ref9.isBillPaid = true;
-		ref9.isBillLatest = false;
+		ref9.isBillLatest = true;
 		ref9.isFinalBill = true;
 		ref9.taxInclusiveBill = false;
 		ref9.billAmt = 324.99;    
