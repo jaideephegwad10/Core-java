@@ -1,0 +1,39 @@
+1a) public is an access specifier it allows to access the main method from anywhere, static is a non-access specifier which allows jvm to access without creating any instance, void is a return type it means the method does not return anything, main is a method name String args[] is a parameter which is an string array type.
+
+1b) class is a template or a design or a plan that contains states and behaviours. states are considered to be variables and behaviours are considered to be methods. using this single design we can create multiple copies of it. it is a non physical entity
+	object is an instance of class or a copy of class, it is a physical entity.
+
+1c) jdk is a fully featured software development kit used to develop software programs it contains jre ans development tools such as compiler, debugger etc..
+	jre is a runtime environment which helps in the execution of the program, it contains jvm and set of libraries which together perform the execution.
+	jvm is a component of java, it provides the runtime environment and jvm converts the source code into bytecode, it also perform three important tasks I)it loads the bytecode
+	ii) verifies the bytecode 
+	iii)reads the bytecode stream line by line
+
+2) Constructor is a special type of method whose name is same as className and does not contain any return type and is used to initialize the variables of the class, helps in code reusability. there are two type of constructors i.e default constructor which has no parameters and initializes the variables with their default values and a parameterized constructor which accepts arguments that will be initialized to the variables.
+
+3)  this keyword is used to solve ambiguity problem where the names of the instance variable and the parameter is same and to differentiate the instance variables of the class from any other variables. Whereas this() is used in constructor chaining and it is always used in the first line of the constructor. this() invokes a constructor of the same class. it is used to access one constructor from another.
+
+4) the signature of main method is inbuilt in java we cannot change the signature except the parameter, however main has to be static because it allows jvm to access main method directly without creating any instances as main is the start point and end point of any program execution. there are two types of methods static and non-static methods, static methods can be accessed without creating any class instances and the should be accessed using the classname and dot operator whereas non-static methods should be accessed through instance of a class and it cannot be accessed directly
+
+6) we cannot have private constructor. if we make constructor private it will be limited to the class itself and we cannot invoke the constructor outside the class to initialize the instance variables.
+
+7)class FindArray{
+
+		public static input[] = {12,3,2,45,6,7,6};
+		
+	
+		public static void main(String args[]){
+		
+			for(int i = 0 ; i<array.length ; i++){
+		
+				if(array.length == input[i])
+					System.out.println("length of the array present in the given list");
+			
+			}
+		}
+	
+	}
+
+8) we can create an instance of the class and use the instance variable inside a static method, otherwise we cannot use them.
+9) polymorphism is a concept where an object behaves differently at different instances, there are two types of polymorphism runtime polymorphism and compiletime polymorphism
+10) inheritance is concept where one class acquires properties and behaviours of another class using the keyword extends. it can be from parent class to child class or from base class to derived class or from superclass to subclass.
